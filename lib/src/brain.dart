@@ -156,14 +156,14 @@ final class CameraDirectorBrain {
   }
 
   /// Forces the brain to snap immediately to the highest-priority enabled rig without blending.
-  void snapToActive() {
+  void snapToActive({CameraObstacleProbe? obstacleProbe}) {
     final target = _selectHighestPriorityRig();
     _previousRig = null;
     _activeRig = target;
     _isBlending = false;
     _blendElapsed = 0.0;
     if (target != null) {
-      final pose = target.evaluate(0.0);
+      final pose = target.evaluate(0.0, obstacleProbe: obstacleProbe);
       _currentUnshakenPose = pose;
       _currentPose = pose;
       _hasEvaluated = true;
