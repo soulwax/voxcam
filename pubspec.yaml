@@ -1,0 +1,11 @@
+name: voxcam
+description: "Pure Dart Cinemachine-style virtual camera brain with priority blending, blend curves, dead-zone framing composer, spring-arm orbit rig, and trauma impulse noise."
+version: 0.1.0
+repository: https://github.com/soulwax/voxcam
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.25.0
