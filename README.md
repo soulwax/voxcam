@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.svg" width="88" alt="voxcam logo"/>
+</p>
+
 # voxcam
 
 Pure Dart Cinemachine-style virtual camera brain and procedural camera rig toolkit.
